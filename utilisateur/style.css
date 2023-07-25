@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+header{
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    padding: 15px 50px;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+h3{
+    display: flex;
+    justify-content: space-between;
+}
+header .logo{
+    color: rgb(255, 255, 255);
+    font-size: 2.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+header .panier img{
+    height: 30px;
+    width: 30px;
+    text-align: center;
+}
+
+header .panier h3{
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.3em;
+    color: black;
+}
+
+header .admin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .admin img{
+    height: 40px;
+    width: 40px;
+}
+
+header .admin a{
+    font-size: 1.2em;
+    color: black;
+    font-weight: 900;
+}
+header nav{
+    position: relative;
+}
+
+header nav .menu a{
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+
+header .bouton a{
+    background-color: black;
+    color: white;
+    padding: 2px 2px;
+    font-size: 1.2em;
+    font-weight: 500;
+    border-radius: 10px;
+}
+header .bouton2{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+header .bouton2 .icon{
+    height: 20px;
+    width: 20px;
+}
+
+header .bouton2:hover{
+    background-color: rgb(187, 187, 187);
+    border: 2px solid white;
+}
+header .bouton2 a{
+    color: black;
+    font-size: 1em;
+    font-weight: 500;
+    border-radius: 10px;
+}
+header nav .menu a:before{
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+header nav .menu a:hover:before{
+    width: 100%;
+}
+
+section{
+    padding: 100px 200px;
+}
+
+
+.home{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.home::before{
+    z-index: 777;
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.234);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.home video{
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home .container{
+    z-index: 888;
+    width: 70%;
+    margin-top: 50px;
+}
+
+.home .container h1{
+    font-weight: 900;
+    font-size: 4em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    
+    margin-bottom: 40px;
+}
+
+.home .container h1 span{
+    font-size: 1.2em;
+    font-weight: 600;
+    background-color: white;
+    
+}
+
+
+.home .container a{
+    background-color: black;
+    color: white;
+    padding: 15px 35px;
+    font-size: 1.3em;
+    font-weight: 500;
+    border-radius: 2px;
+}
+
+.home .container a:hover{
+    background-color: rgba(0, 0, 0, 0.544);
+    font-weight: 600;
+}
+
+/* -------sous menu------ */
+
+.mini_menu {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 50px;
+    height: 50px;
+    position: sticky;
+    top: 0;
+}
+
+.mini_menu a{
+    color: white;
+    font-weight: 900;
+    font-size: 1.4em;
+}
+
+.acceuil{
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 900;
+    padding: 15px 50px;
+}
+
+.cards{
+    padding: 10px 40px;
+    
+}
+.card_row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+form{
+    width: 22%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: justify;
+    box-shadow: 1px 1px 5px black ;
+    text-align: center;
+    margin-top: 50px ;
+}
+.card h4 {
+    font-size: 1.4em;
+    padding: 0;
+    color: orangered;
+}
+.card h3{
+    font-size: 1.5em;
+    letter-spacing: 3.5px;
+}
+
+.card input{
+    margin: 10px;
+    height: 25px;
+    width: 60%;
+    font-size: 1.3em;
+    font-weight: 800;
+    text-align: center;
+}
+.card input::placeholder{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.67);
+    font-size: 1em;
+}
+
+.card .btn{
+    background-color: black;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+    font-weight: 900;
+    height: 35px;
+    width: 90%;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.card .btn:hover{
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+}
+
+
+
+/* ________________media querie_______________ */
+@media (max-width: 1040px) {
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    section{
+        padding: 100px 20px;
+    }
+
+    header .logo{
+        font-size: 1.5em;
+    }
+    header .naviguation{
+        display: none;
+    }
+    header nav.active{
+        position: fixed;
+        width: 90%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .admin{
+        display: none;
+    }
+
+    header nav.active .menu{
+        background-color: black;
+        width: 100%;
+        max-width: 600px;
+        margin: 20px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: 0 5px 25px rgb(1, 1, 1/20%);
+    }
+
+
+
+    header nav .menu a{
+        color: white;
+        font-size: 1.2em;
+        margin: 20px;
+    }
+
+    header nav .menu a:before{
+        background-color: white;
+        height: 5px;
+    }
+    
+    header .bouton a{
+        background-color: black;
+        color: white;
+        font-size: 1em;
+        font-weight: 500;
+        border-radius: 10px;
+    }
+    header .bouton a:last-child{
+        display: none;
+    }
+
+    .home .container h1{
+        font-weight: 900;
+        font-size: 2.5em;
+    }
+
+    .menu_btn{
+        background: url(../utilisateur/icons/menu.png) no-repeat ;
+        background-position: center;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transform: 0.3s ease;
+    }
+
+    .menu_btn.active{
+        z-index: 999;
+        background: url(../utilisateur/icons/menuoff.png) no-repeat;
+        background-size: 30px;
+        background-position: center;
+        transition: 0.3s ease;
+    }
+}
